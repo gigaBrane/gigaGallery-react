@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import Punk from './pages/Punk';
+import Doodles from './pages/Doodles';
+import Myth from './pages/Myth';
+import FarEast from './pages/FarEast'
+import Dinos from './pages/Dinos'
+import Steam from './pages/Steam'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="bg-gray-900 min-h-screen flex flex-col">
+       
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/cyberpunk" element={<Punk />} />
+            <Route path="/doodles" element={<Doodles />} />
+            <Route path="/myth" element={<Myth />} />
+            <Route path="/dinos" element={<Dinos />} />
+            <Route path="/asia" element={<FarEast />} />
+            <Route path="/steampunk" element={<Steam />} />
+
+
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
