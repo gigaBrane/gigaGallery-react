@@ -39,16 +39,16 @@ const FeaturedImages = ({ images }) => {
 const Home = () => {
   // Image data for the first row of featured images
   const imagesRow1 = [
-    { url: '/assets/archAsia/squareAsia.png', title: 'Architecture of the Far East', description: 'Architecture of the Far East.', link: '/asia' },
-    { url: '/assets/punk/punkSquare.png', title: 'CyberPunk', description: 'CyberPunk Dystopia.', link: '/cyberpunk' },
-    { url: '/assets/myth/myth7.png', title: 'Mythology', description: 'Mythological Marvels.', link: '/myth' }
+    { url: '/assets/archAsia/asia1.webp', title: 'Architecture of the Far East', description: 'Architecture of the Far East.', link: '/asia' },
+    { url: '/assets/punk/punkSquare.webp', title: 'CyberPunk', description: 'CyberPunk Dystopia.', link: '/cyberpunk' },
+    { url: '/assets/myth/myth16.webp', title: 'Mythology', description: 'Mythological Marvels.', link: '/myth' }
   ];
 
   // Image data for the second row of featured images
   const imagesRow2 = [
-    { url: '/assets/doodles/doodle21.png', title: 'Doodles', description: 'Doodles.', link: '/doodles' },
-    { url: '/assets/dinos/dino36.png', title: 'Dinosaurus', description: 'Discover Dinos.', link: '/dinos' },
-    { url: '/assets/steam/steampunk14.png', title: 'Steampunk Surrealism', description: 'Steampunk.', link: '/steampunk' }
+    { url: '/assets/doodles/doodle21.webp', title: 'Doodles', description: 'Doodles.', link: '/doodles' },
+    { url: '/assets/dinos/dino36.webp', title: 'Dinosaurus', description: 'Discover Dinos.', link: '/dinos' },
+    { url: '/assets/steam/steampunk2.webp', title: 'Steampunk Surrealism', description: 'Steampunk.', link: '/steampunk' }
   ];
 
   return (
@@ -56,7 +56,7 @@ const Home = () => {
       {/* Hero Section with Image Underlay */}
       <div className="relative h-screen flex flex-col justify-center items-center bg-cover bg-center" 
         style={{
-          backgroundImage: `url('/assets/rain.png')`,
+          backgroundImage: `url('/assets/rain.webp')`,
           backgroundBlendMode: 'overlay'
         }}
       >
@@ -69,7 +69,7 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          GigaGallery
+          gigaGallery
         </motion.h1>
 
         <motion.p 
@@ -113,7 +113,7 @@ const Home = () => {
       </div>
 
       {/* Parallax Scroll Section */}
-      <div className="relative py-20 bg-fixed bg-cover bg-center" style={{ backgroundImage: `url('/assets/rain.png')` }}>
+      <div className="relative py-20 bg-fixed bg-cover bg-center" style={{ backgroundImage: `url('/assets/rain.webp')` }}>
   <div className="text-center bg-gray-900 bg-opacity-75 py-20">
     <h2 className="text-5xl font-bold mb-8">Discover the Future of Creativity with AI</h2>
     <p className="text-xl max-w-4xl mx-auto">
